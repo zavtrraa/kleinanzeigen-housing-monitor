@@ -62,6 +62,12 @@ class BrowserLifecycleTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(options["color_scheme"], "dark")
         self.context.close.assert_awaited_once()
 
+    async def test_explicit_sandbox_opt_out_is_forwarded(self):
+        factory = BrowserFactory(self.profile, chromium_sandbox=False)
+        async with factory.open():
+            pass
+        self.assertFalse(self.launch.call_args.kwargs["chromium_sandbox"])
+
     async def test_context_and_lock_released_when_consumer_fails(self):
         factory = BrowserFactory(self.profile)
         with self.assertRaisesRegex(RuntimeError, "consumer"):

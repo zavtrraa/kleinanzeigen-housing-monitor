@@ -242,7 +242,9 @@ class BrowserTests(unittest.IsolatedAsyncioTestCase):
         from kleinanzeigen_bot.core.exceptions import ProfileLocked
 
         with tempfile.TemporaryDirectory() as directory:
-            factory = BrowserFactory(Path(directory) / "profile", headless=True)
+            factory = BrowserFactory(
+                Path(directory) / "profile", headless=True, chromium_sandbox=False
+            )
             async with factory.open():
                 with self.assertRaises(ProfileLocked):
                     async with factory.open():

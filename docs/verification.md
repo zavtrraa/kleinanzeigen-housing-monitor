@@ -38,7 +38,7 @@ Final verification on 21 November 2026:
 
 ```text
 pytest -q
-263 passed, 2 skipped, 4 warnings, 84 subtests passed in 76.60s
+264 passed, 2 skipped, 4 warnings, 84 subtests passed in 76.73s
 
 ruff check src tests scripts
 All checks passed!

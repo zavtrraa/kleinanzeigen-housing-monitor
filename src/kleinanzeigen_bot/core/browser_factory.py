@@ -26,10 +26,12 @@ class BrowserFactory:
         window_width=1000,
         window_height=720,
         color_scheme="dark",
+        chromium_sandbox: bool = True,
     ):
         self.profile_dir, self.headless = profile_dir, headless
         self.window_width, self.window_height = window_width, window_height
         self.color_scheme = color_scheme
+        self.chromium_sandbox = chromium_sandbox
         self.engine, self.context_hook = engine, context_hook
         self.channel, self.locale, self.timezone_id = channel, locale, timezone_id
 
@@ -54,7 +56,7 @@ class BrowserFactory:
                     "headless": self.headless,
                     "no_viewport": True,
                     "accept_downloads": False,
-                    "chromium_sandbox": True,
+                    "chromium_sandbox": self.chromium_sandbox,
                     "color_scheme": self.color_scheme,
                     "args": [f"--window-size={self.window_width},{self.window_height}"]
                     + (["--force-dark-mode"] if self.color_scheme == "dark" else []),
