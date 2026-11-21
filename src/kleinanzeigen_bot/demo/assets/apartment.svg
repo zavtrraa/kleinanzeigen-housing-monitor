@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+<rect width="1000" height="420" fill="#e4ece4"/><path d="M0 330 Q230 255 460 320 T1000 310 V420 H0" fill="#c9d9c4"/>
+<circle cx="815" cy="87" r="45" fill="#f4f0d7"/><rect x="250" y="66" width="470" height="318" rx="3" fill="#ebe8dd"/><path d="M225 69 485 6 745 69" fill="#4b655c"/>
+<g fill="#78998e"><rect x="292" y="105" width="95" height="80"/><rect x="437" y="105" width="95" height="80"/><rect x="582" y="105" width="95" height="80"/><rect x="292" y="225" width="95" height="80"/><rect x="582" y="225" width="95" height="80"/></g>
+<g stroke="#f4f1e7" stroke-width="6"><path d="M339 105V185M485 105V185M629 105V185M339 225V305M629 225V305"/></g>
+<rect x="438" y="252" width="92" height="132" fill="#526e5c"/><rect x="449" y="262" width="70" height="65" fill="#9ab0a0"/>
+<g stroke="#718570" fill="none" stroke-width="5"><path d="M272 162H405V201H272ZM565 162H699V201H565Z"/><path d="M292 164V200M315 164V200M340 164V200M365 164V200M388 164V200M585 164V200M610 164V200M635 164V200M660 164V200M684 164V200"/></g>
+<g fill="#6a8c63"><circle cx="158" cy="265" r="62"/><circle cx="108" cy="300" r="48"/><circle cx="840" cy="300" r="65"/></g><g stroke="#6d7658" stroke-width="9"><path d="M158 288V399M840 326V400"/></g>
+<path d="M430 420 451 384H517L540 420" fill="#d5d3c5"/><text x="25" y="395" font-family="sans-serif" font-size="15" fill="#46634c">SYNTHETIC DEMO IMAGE</text></svg>

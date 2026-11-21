@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="de"><head><title>Helle Wohnung</title></head><body>
+<p id="viewad-description-text">Warmmiete: 500 €.</p>
+<button id="open" onclick="document.getElementById('compose').hidden=false">Nachricht schreiben</button>
+<section id="compose" hidden>
+  <label>Nachricht<textarea name="message"></textarea></label>
+  <button onclick="window.submissions=(window.submissions||0)+1;document.getElementById('success').hidden=false">Nachricht senden</button>
+</section>
+<p id="success" hidden>Deine Nachricht wurde erfolgreich gesendet</p>
+</body></html>

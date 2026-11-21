@@ -1,0 +1,78 @@
+# Real delivery is not attested. LIVE checks each form before a single submission.
+selectors_verified: false
+live_validation: per_listing
+timeout_ms: 15000
+confirmation_timeout_ms: 20000
+max_listings_per_profile: 125
+max_pages_per_profile: 5
+search:
+  cards: '#srchrslt-adtable article[data-adid], #srchrslt-adtable article.aditem, body > article.aditem'
+  link: 'h3 a[href*="/s-anzeige/"], h2 a[href*="/s-anzeige/"], a.ellipsis'
+  title: 'h3, h2'
+  price: 'p.text-title3, .aditem-main--middle--price-shipping--price'
+  details: 'p.font-strong, .aditem-main--middle--tags'
+  date: .aditem-main--top--right
+  empty:
+    - kind: text
+      value: 'Keine Anzeigen gefunden|Keine Ergebnisse gefunden|Es wurden keine Ergebnisse'
+      regex: true
+listing_description:
+  - kind: css
+    value: '#viewad-description-text'
+  - kind: css
+    value: '[itemprop="description"]'
+listing_costs:
+  - kind: css
+    value: '#viewad-details'
+message:
+  open:
+    - kind: role
+      role: button
+      value: Nachricht schreiben
+    - kind: role
+      role: link
+      value: Nachricht schreiben
+    - kind: css
+      value: '#viewad-contact-button'
+  input:
+    - kind: css
+      value: 'dialog[open] textarea'
+    - kind: css
+      value: '[role="dialog"][aria-modal="true"] textarea'
+    - kind: role
+      role: textbox
+      value: Nachricht
+    - kind: css
+      value: 'textarea[name="message"]'
+    - kind: css
+      value: '#viewad-contact-message'
+  submit:
+    - kind: css
+      value: 'dialog[open] button:has-text("Nachricht senden")'
+    - kind: css
+      value: '[role="dialog"][aria-modal="true"] button:has-text("Nachricht senden")'
+    - kind: role
+      role: button
+      value: '^(Nachricht senden|Senden)$'
+      regex: true
+    - kind: css
+      value: '#viewad-contact-submit'
+  success:
+    - kind: css
+      value: '[role="alert"]:has-text("Erfolgreich gesendet!")'
+    - kind: text
+      value: 'Deine Nachricht wurde (erfolgreich )?gesendet'
+      regex: true
+    - kind: text
+      value: 'Nachricht erfolgreich versendet'
+  challenge:
+    - kind: css
+      value: 'iframe[src*="challenges.cloudflare.com"]'
+    - kind: css
+      value: 'iframe[src*="recaptcha"]'
+    - kind: text
+      value: 'Bestätige, dass du ein Mensch bist|Verify you are human'
+      regex: true
+  auth:
+    - kind: css
+      value: 'input[type="password"]'

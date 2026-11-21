@@ -1,0 +1,35 @@
+{
+  "data": {
+    "propertyList": {
+      "page": {
+        "page": 0,
+        "hasNext": false,
+        "totalPages": 1,
+        "totalElements": 1
+      },
+      "nodes": [
+        {
+          "name": "Fixture Wohnung",
+          "objectId": "123",
+          "applicationLink": "https://tenant.immomio.com/apply/00000000-0000-0000-0000-000000000123",
+          "address": {
+            "city": "Hannover",
+            "street": "Teststr.",
+            "houseNumber": "1",
+            "zipCode": "30159",
+            "district": "Mitte"
+          },
+          "size": 25,
+          "totalRooms": 1,
+          "totalRentGross": 500,
+          "propertyType": "FLAT",
+          "marketingType": "RENT",
+          "wbs": false,
+          "availableFrom": {
+            "dateAvailable": "2027-02-01"
+          }
+        }
+      ]
+    }
+  }
+}

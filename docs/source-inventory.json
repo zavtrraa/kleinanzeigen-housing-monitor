@@ -1,0 +1,527 @@
+[
+  {
+    "path": ".env.example",
+    "bytes": 1347,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 101,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "ARCHITECTURE.md",
+    "bytes": 4536,
+    "decision": "consolidate into English documentation"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 1006,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "README_HOUSING.md",
+    "bytes": 18738,
+    "decision": "consolidate into English documentation"
+  },
+  {
+    "path": "README.md",
+    "bytes": 18532,
+    "decision": "consolidate into English documentation"
+  },
+  {
+    "path": "requirements-tested.txt",
+    "bytes": 641,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "restart-background.ps1",
+    "bytes": 778,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "run-local.ps1",
+    "bytes": 2604,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "run-tests.ps1",
+    "bytes": 2580,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "start-background.ps1",
+    "bytes": 2038,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "start-live.ps1",
+    "bytes": 786,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "start-send-test.ps1",
+    "bytes": 75,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "status-background.ps1",
+    "bytes": 216,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "stop-background.ps1",
+    "bytes": 289,
+    "decision": "replace with portable entry points"
+  },
+  {
+    "path": "TESTING.md",
+    "bytes": 5801,
+    "decision": "consolidate into English documentation"
+  },
+  {
+    "path": "VALIDATION.md",
+    "bytes": 24147,
+    "decision": "consolidate into English documentation"
+  },
+  {
+    "path": "config/exclusions.yaml",
+    "bytes": 1588,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "config/housing.yaml",
+    "bytes": 482,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "config/runtime.yaml",
+    "bytes": 2344,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "config/search_profiles.yaml",
+    "bytes": 1078,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "config/message_templates/base_de.txt",
+    "bytes": 195,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "config/message_templates/variants.yaml",
+    "bytes": 233,
+    "decision": "retain and sanitize examples"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/__init__.py",
+    "bytes": 34,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/__main__.py",
+    "bytes": 31,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/demo.py",
+    "bytes": 1719,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/main.py",
+    "bytes": 16937,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/scheduler.py",
+    "bytes": 837,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/settings.py",
+    "bytes": 8443,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/action/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/action/humanizer.py",
+    "bytes": 637,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/action/rate_limiter.py",
+    "bytes": 546,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/action/sender.py",
+    "bytes": 8313,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/action/text_variator.py",
+    "bytes": 1354,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/browser_audit.py",
+    "bytes": 6847,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/browser_factory.py",
+    "bytes": 4612,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/diagnostics.py",
+    "bytes": 1861,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/eligibility.py",
+    "bytes": 3618,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/exceptions.py",
+    "bytes": 812,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/models.py",
+    "bytes": 1773,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/orchestrator.py",
+    "bytes": 13413,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/ports.py",
+    "bytes": 688,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/core/ui.py",
+    "bytes": 3210,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/email_sources.py",
+    "bytes": 8782,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/models.py",
+    "bytes": 2329,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/policy.py",
+    "bytes": 3634,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/public_sources.py",
+    "bytes": 10776,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/runner.py",
+    "bytes": 8914,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/runtime.py",
+    "bytes": 1323,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/service.py",
+    "bytes": 3538,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/store.py",
+    "bytes": 10032,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/housing/telegram.py",
+    "bytes": 8136,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/ingestion/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/ingestion/extractors.py",
+    "bytes": 2315,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/ingestion/search.py",
+    "bytes": 6744,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/notifications/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/notifications/formatters.py",
+    "bytes": 5244,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/notifications/pacing.py",
+    "bytes": 1133,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/notifications/telegram_bot.py",
+    "bytes": 3148,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/observability/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/observability/logging.py",
+    "bytes": 848,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/controls.py",
+    "bytes": 4746,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/daemon.py",
+    "bytes": 12967,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/events.py",
+    "bytes": 3422,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/live_cycle.py",
+    "bytes": 9032,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/panel.py",
+    "bytes": 2664,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/queue.py",
+    "bytes": 4656,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/runtime/send_probe.py",
+    "bytes": 4682,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/state/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/state/observations.py",
+    "bytes": 5271,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/state/repository.py",
+    "bytes": 934,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/state/schema.sql",
+    "bytes": 2331,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "src/kleinanzeigen_bot/state/sqlite_repo.py",
+    "bytes": 6577,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/hanova_public.json",
+    "bytes": 838,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/heimkehr_public.html",
+    "bytes": 193,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/listing_native_dialog.html",
+    "bytes": 979,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/listing.html",
+    "bytes": 569,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/search_current.html",
+    "bytes": 1425,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/fixtures/search.html",
+    "bytes": 430,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_browser_profile.py",
+    "bytes": 1964,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_browser.py",
+    "bytes": 23202,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_daemon.py",
+    "bytes": 4371,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_hub_lifecycle.py",
+    "bytes": 3450,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_login.py",
+    "bytes": 2297,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/integration/test_orchestrator.py",
+    "bytes": 12877,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/__init__.py",
+    "bytes": 0,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_browser_lifecycle.py",
+    "bytes": 10034,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_browser_profile.py",
+    "bytes": 1543,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_config_and_parsing.py",
+    "bytes": 4278,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_control_panel.py",
+    "bytes": 4723,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_debugging.py",
+    "bytes": 4325,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_eligibility.py",
+    "bytes": 5115,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_housing.py",
+    "bytes": 18851,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_live_policy.py",
+    "bytes": 3441,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_observations.py",
+    "bytes": 4425,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_runtime_queue.py",
+    "bytes": 4853,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_runtime_reports.py",
+    "bytes": 4983,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_state.py",
+    "bytes": 3844,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_telegram_diagnostics.py",
+    "bytes": 1897,
+    "decision": "retain; audit and test"
+  },
+  {
+    "path": "tests/unit/test_transports_and_reports.py",
+    "bytes": 9356,
+    "decision": "retain; audit and test"
+  }
+]

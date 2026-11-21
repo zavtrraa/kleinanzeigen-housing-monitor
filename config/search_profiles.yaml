@@ -1,0 +1,18 @@
+# Newest offers, without an extra keyword. Exchange checks are local and explained.
+# Card price can be Kaltmiete; known Warmmiete > 520 remains excluded.
+profiles:
+  - name: hannover
+    enabled: true
+    url: https://www.kleinanzeigen.de/s-wohnung-mieten/hannover/sortierung:neuste/anzeige:angebote/preis::520/c203l3155+wohnung_mieten.qm_d:20%2C
+  - name: laatzen
+    enabled: true
+    url: https://www.kleinanzeigen.de/s-wohnung-mieten/laatzen/sortierung:neuste/anzeige:angebote/preis::520/c203l2892+wohnung_mieten.qm_d:20%2C
+  - name: langenhagen
+    enabled: true
+    url: https://www.kleinanzeigen.de/s-wohnung-mieten/langenhagen/sortierung:neuste/anzeige:angebote/preis::520/c203l3041+wohnung_mieten.qm_d:20%2C
+  - name: garbsen
+    enabled: true
+    url: https://www.kleinanzeigen.de/s-wohnung-mieten/garbsen/sortierung:neuste/anzeige:angebote/preis::520/c203l3067+wohnung_mieten.qm_d:20%2C
+  - name: seelze
+    enabled: true
+    url: https://www.kleinanzeigen.de/s-wohnung-mieten/seelze/sortierung:neuste/anzeige:angebote/preis::520/c203l2920+wohnung_mieten.qm_d:20%2C

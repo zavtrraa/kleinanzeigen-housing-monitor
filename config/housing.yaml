@@ -1,0 +1,17 @@
+# New sources notify only. Original Kleinanzeigen sender remains separate.
+city: Hannover
+allowed_cities: [Hannover, Laatzen, Langenhagen, Garbsen, Seelze]
+min_size_sqm: '20'
+max_warm_eur: '520'
+move_in_from: '2027-02-01'
+wbs_status: unknown
+notify_review: true
+feed_interval_seconds: 1800
+gmail_interval_seconds: 60
+gmail_folder: Housing
+gmail_initial_messages: 30
+max_pages_per_source: 3
+request_timeout_seconds: 25
+hanova_enabled: false
+heimkehr_enabled: false
+gmail_enabled: false

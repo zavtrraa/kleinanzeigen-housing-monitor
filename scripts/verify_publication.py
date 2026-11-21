@@ -15,6 +15,7 @@ IGNORED_PATHS = (
     ".superpowers/sdd/release/progress.md",
 )
 PUBLISHED_PATHS = (".env.example", "config/runtime.yaml", "docs/verification.md")
+REQUIRED_PATHS = ("LICENSE", ".github/workflows/verify.yml")
 
 
 def is_ignored(path: str) -> bool:
@@ -28,6 +29,9 @@ def main() -> int:
     failures = [f"{path} must be ignored" for path in IGNORED_PATHS if not is_ignored(path)]
     failures.extend(
         f"{path} must remain publishable" for path in PUBLISHED_PATHS if is_ignored(path)
+    )
+    failures.extend(
+        f"{path} must exist" for path in REQUIRED_PATHS if not (ROOT / path).is_file()
     )
     project = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
     dependencies = project["project"]["dependencies"]

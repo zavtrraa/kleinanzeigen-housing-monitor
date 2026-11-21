@@ -1,0 +1,96 @@
+{
+  "workflow": "settings -> search -> cards -> status -> template -> repeat -> pause -> resume",
+  "browser_errors": [],
+  "external_requests": [],
+  "seller_attempts": 0,
+  "last_report": {
+    "id": "5d5e9ff9-d92c-4df6-8828-ac585c7adb0b",
+    "dry_run": true,
+    "found": 5,
+    "search_completed": true,
+    "diagnostics": [],
+    "new": 0,
+    "changed": 0,
+    "unchanged": 5,
+    "cached": 3,
+    "preparation_failed": 0,
+    "sources": [],
+    "sent": 0,
+    "uncertain": 0,
+    "recovered": 0,
+    "previews": [
+      {
+        "listing_id": "9000000001",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000001-203-1",
+        "text": "Guten Tag,\n\nich interessiere mich f\u00fcr die Wohnung. Ist eine Besichtigung m\u00f6glich?\n\nMit freundlichen Gr\u00fc\u00dfen"
+      }
+    ],
+    "skipped": [
+      {
+        "listing_id": "9000000005",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000005-203-1",
+        "outcome": "review",
+        "reason": "Warmmiete is not specified reliably"
+      }
+    ],
+    "errors": [],
+    "halted": false,
+    "started_at": "2026-11-19T15:15:21.197040+00:00",
+    "finished_at": "2026-11-19T15:15:21.204041+00:00",
+    "trigger": "manual",
+    "request_id": "3",
+    "items": [
+      {
+        "listing_id": "9000000001",
+        "title": "Balcony apartment in Linden",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000001-203-1",
+        "status": "already_notified",
+        "note": "",
+        "warnings": [],
+        "change_kind": "unchanged"
+      },
+      {
+        "listing_id": "9000000002",
+        "title": "Spacious balcony apartment",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000002-203-1",
+        "status": "cached",
+        "note": "Warmmiete 690 \u20ac > 600 \u20ac",
+        "warnings": [],
+        "change_kind": "unchanged"
+      },
+      {
+        "listing_id": "9000000003",
+        "title": "WG-Zimmer with a shared balcony",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000003-203-1",
+        "status": "cached",
+        "note": "Area is below the configured minimum",
+        "warnings": [],
+        "change_kind": "unchanged"
+      },
+      {
+        "listing_id": "9000000004",
+        "title": "Garden apartment in Garbsen",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000004-203-1",
+        "status": "cached",
+        "note": "Outside the selected search cities",
+        "warnings": [],
+        "change_kind": "unchanged"
+      },
+      {
+        "listing_id": "9000000005",
+        "title": "Bright studio with a balcony",
+        "url": "https://www.kleinanzeigen.de/s-anzeige/demo/9000000005-203-1",
+        "status": "already_notified",
+        "note": "Warmmiete is not specified reliably",
+        "warnings": [],
+        "change_kind": "unchanged"
+      }
+    ],
+    "monitoring": true,
+    "matched": 1,
+    "notified": 0,
+    "excluded": 0,
+    "review": 1,
+    "inspection_failed": 0
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Housing Monitor — Local Demo</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">H</span><div>Housing Monitor<small>Kleinanzeigen apartment search</small></div></div>
+    <span class="demo-tag">Local demo · fictional listings</span>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">SEARCH, FILTER, FOLLOW UP</p><h1>A clearer view of your next home.</h1>
+      <p>Set your criteria. Run a search. Keep useful listings in one place.</p></div>
+      <div class="mode"><span class="status-dot"></span><strong id="mode">Ready</strong><small>No seller messages are sent in this demo.</small></div>
+    </section>
+    <section class="metrics" aria-label="Latest run">
+      <article><span>Listings checked</span><strong id="found">—</strong><small>Latest completed run</small></article>
+      <article><span>Matches</span><strong id="matched">—</strong><small>Meet the known criteria</small></article>
+      <article><span>New notifications</span><strong id="notified">—</strong><small>Repeated results are deduplicated</small></article>
+      <article><span>Queue</span><strong id="queued">0</strong><small id="queue-note">Ready for your next search</small></article>
+    </section>
+    <div class="workspace">
+      <aside>
+        <section class="card settings"><div class="section-title"><h2>Search criteria</h2><span>01</span></div>
+          <form id="filters">
+            <label for="city">Locations</label><select id="city" multiple size="5"><option value="hannover">Hannover</option><option value="laatzen">Laatzen</option><option value="langenhagen">Langenhagen</option><option value="garbsen">Garbsen</option><option value="seelze">Seelze</option></select>
+            <label for="query">Search terms</label><input id="query" maxlength="120" placeholder="e.g. balcony">
+            <div class="form-row"><div><label for="budget">Max. rent, EUR</label><input id="budget" type="number" min="0.01" max="10000" step="0.01" required></div>
+              <div><label for="area">Min. area, m²</label><input id="area" type="number" min="0" max="1000" step="0.01" required></div></div>
+            <p class="hint">Listing prices can exclude service and heating costs. Unclear totals are flagged for review.</p>
+            <button class="primary" type="submit">Save criteria</button>
+          </form>
+        </section>
+        <section class="card controls"><div class="section-title"><h2>Monitoring</h2><span>02</span></div>
+          <button class="primary" data-command="/run">Run search</button>
+          <div class="button-row"><button data-command="/pause">Pause</button><button data-command="/resume">Resume</button></div>
+          <button data-command="/status">Show status</button>
+        </section>
+        <section class="card reply"><div class="section-title"><h2>Reply workflow</h2><span>03</span></div>
+          <p>Review the message before enabling replies. The local demo only creates previews.</p>
+          <button data-command="/template">View reply template</button>
+          <label class="toggle"><input id="replies" type="checkbox">Enable reply previews</label>
+        </section>
+      </aside>
+      <section class="card conversation"><div class="conversation-head"><div><h2>Telegram preview</h2><p>Actual bot payloads, delivered locally</p></div><span class="quiet-tag">Private workspace</span></div>
+        <div id="messages" class="messages" aria-label="Bot conversation" aria-live="polite"></div>
+        <form id="command-form" class="composer"><label class="sr-only" for="command">Bot command</label><input id="command" placeholder="Try /settings or /template" maxlength="500"><button type="submit">Send</button></form>
+      </section>
+    </div>
+    <p class="footnote">This demo uses the production controls, filters and SQLite workflow with synthetic source data. Live Telegram and website delivery are separate integrations.</p>
+  </main>
+  <div id="notice" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!doctype html><html lang="de"><head><title>Fixture Wohnung</title></head><body>
+<p id="viewad-description-text">Warmmiete bitte erfragen.</p>
+<!-- Reproduces observed DOM structure, with no saved account/contact values. -->
+<section><textarea id=":inline1:"></textarea><button>Nachricht senden</button></section>
+<button id="viewad-contact-button" onclick="document.querySelector('dialog').showModal()">Nachricht schreiben</button>
+<dialog><header>Nachricht schreiben</header>
+<label for=":fixture1:">Nachricht *</label><textarea id=":fixture1:" required></textarea>
+<label for=":fixture2:">Profilname *</label><input id=":fixture2:" required value="Testprofil">
+<label for=":fixture3:">Telefonnummer *</label><input id=":fixture3:">
+<button type="button" onclick="window.submissions=(window.submissions||0)+1;document.getElementById('success').hidden=false">Nachricht senden</button>
+<p id="success" hidden>Deine Nachricht wurde erfolgreich gesendet</p>
+</dialog></body></html>

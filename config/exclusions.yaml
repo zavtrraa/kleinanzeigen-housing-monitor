@@ -1,0 +1,32 @@
+# One person; no shared apartment; at most 520 EUR Warmmiete.
+# Unknown/ambiguous total goes to manual review, not an automatic message.
+household_size: 1
+max_warm_eur: '520'
+rules:
+  - name: applications_closed
+    label: Applications closed
+    patterns:
+      - '\b(?:anfrage[-\s]?stopp?|bewerbungs[-\s]?stopp?)\b'
+      - '\b(?:keine|bitte\s+keine)\s+weiteren\s+(?:anfragen|bewerbungen)\b'
+  - name: exchange_only
+    label: Apartment exchange
+    patterns:
+      - '\b(?:tauschwohnung(?:en)?|wohnungstausch|tauschobjekt|tauschangebot(?:e)?)\b'
+      - '\b(?:nur\s+(?:(?:im|zum|gegen)\s+)?tausch|(?:im|zum|gegen)\s+tausch)\b'
+      - '\btausche\s+(?:meine|unsere|eine)\s+wohnung\b'
+      - '\b(?:nur|ausschlie[ßs]lich)\s+(?:als\s+)?tausch\b'
+  - name: women_only
+    label: Women-only offer
+    patterns:
+      - '\b(?:nur|ausschlie[ßs]lich)\s+(?:(?:an|für)\s+)?(?:(?:eine|weibliche|weiblichen)\s+)?(?:frau(?:en)?|mädchen|mieterinnen?|nachmieterinnen?|mitbewohnerinnen?|studentinnen?)\b'
+      - '\b(?:frauen[-\s]?(?:wg|wohnung)|damen[-\s]?wg)\b'
+      - '\b(?:weibliche|weiblichen)\s+(?:mieterin|nachmieterin|mitbewohnerin)\s+gesucht\b'
+      - '\b(?:keine|nicht\s+an)\s+männer\b'
+  - name: shared_housing
+    label: Shared housing
+    patterns:
+      - '\bzimmer\s+in\s+(?:(?:einer|der|unserer)\s+)?(?:wohnung|haus)\b'
+      - '\beinzelzimmer\b'
+      - '\b(?:wg[-\s]?zimmer|wohngemeinschaft)\b'
+      - '\bzimmer\s+in\s+(?:(?:einer|unserer|der)\s+)?wg\b'
+      - '\bmitbewohner(?:in)?\s+gesucht\b'

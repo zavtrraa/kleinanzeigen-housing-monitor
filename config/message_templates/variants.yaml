@@ -1,0 +1,8 @@
+# Current base_de.txt is literal: these variants are used only with placeholders.
+# Stylistic variants only; no invented personal claims.
+greetings:
+  - Guten Tag,
+  - Hallo,
+closings:
+  - Mit freundlichen Grüßen
+  - Viele Grüße
